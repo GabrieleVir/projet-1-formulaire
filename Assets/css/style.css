@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('../font/Bellota-Regular-webfont.eot');
+    src: url('../font/Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bellota-Regular-webfont.woff') format('woff'),
+         url('../font/Bellota-Regular-webfont.ttf') format('truetype'),
+         url('../font/Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+  font-family: 'bellotaregular';
+  width:90%;
+  margin:auto;
+  background-color: #f2f2f2;
+
+}
+
+form {
+  background-color: #FFFFFF;
+  display: inline-block;
+  background-image: url("hackers-poulette-logo.png");
+  position: relative;
+  width: 100%;
+
+
+
+}
+
+header {
+  background-color: #15C5BD;
+  margin-top:0 auto;
+}
+
+h1 {
+  padding-top: -2px;
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding-bottom: 50px;
+  padding-left: 40px;
+  color:#FFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family:;
+}
+
+
+fieldset{
+  display:inline-block;
+
+
+}
+
+
+.info {
+  width:30%;
+  display: inline;
+  border: 0px solid black;
+  vertical-align: top;
+  margin-left: 50px;
+  padding-right: 10%;
+
+}
+
+
+.message {
+  margin-top: 0px;
+  display:inline;
+  border: 0px solid black;
+  vertical-align: top;
+  width: 50%;
+}
+
+.nom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.nom input {
+  margin-left: 10px;
+  width:50%;
+}
+
+
+
+
+
+#genre {
+  width:10%;
+}
+
+.email {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-bottom: 37px;
+
+}
+
+.pays-list select {
+  width:80%;
+}
+
+button {
+  display:block;
+  float:right;
+  margin-right: 7%;
+  width: 100px;
+  height: 80px;
+  
+}
+
+input {
+  float:flex;
+}
+
+
+footer {
+
+   background-color: #15C5BD;
+   width: 100%;
+   height: 60px;
+}
+
+
+.message {
+  display: inline;
+}
+
+.sujet {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.message-box {
+  display: inline;
+
+  
+}
+input {
+  border:0px ;
+  border-bottom: 2px solid #A5C5BD;
+
+}
+.button {
+  background:white;
+  border-radius: 1px;
+  border:0px;
+  margin-top: 2%;
+  height: 30px;
+  
+}
+
+#hacker-p {
+  display:inline;
+  
+}
+
+#hacker-p img {
+  width: 300px;
+  height:250px;
+  left: 75%;
+  top: 20%;
+  position: absolute;
+}
+
+#text-message {
+  width: 92%;
+  border: solid dashed 1px;
+  font-size: 16px;
+  margin-top: 20px;
+  resize: none;
+
+}
+
+.php {
+  margin-left: 40px;
+}
+
+
+#formulaire label.error {
+  color:#FB3A3A;
+  font-weight:bold;
+  font-style: italic;
+}
