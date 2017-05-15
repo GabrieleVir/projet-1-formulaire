@@ -2,7 +2,6 @@
 
 			function stringSani ($filtredvar) {
 				$filtredvar = filter_var($filtredvar,FILTER_SANITIZE_STRING);
-				$filtredvar = htmlspecialchars($filtredvar);
 				return $filtredvar;
 			}	
 
@@ -25,13 +24,12 @@
 			$nom = sanitize ($_POST['nom']);
 			$prenom = sanitize ($_POST['prenom']);
 			$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-			$email = htmlspecialchars($email);
 			$sujet_radio = $_POST['sujet'];
 
-				if (!empty($nom) && !empty($prenom) && !empty($email) && !empty($txt_msg) && isset($sujet_radio) && $_POST['pays'] != 'Choose') 
+				if (!empty($nom) && !empty($prenom) && !empty($email) && !empty($txt_msg) && isset($sujet_radio)) 
 				{
 
-				
+					$msg_mail = 'Nom : '.$nom."&nbsp".'Prénom : '.$prenom."<br/>".'Email : '.$email."<br/>".'Sujet : '.$sujet_radio."<br/>".'Message :'.$txt_msg;
 					if ($_POST['sujet'] == 'Sujet 4' && empty($sujet)) 
 					{	
 						$mess_suj = 'Veuillez mettre un titre pour la raison de votre message.';
@@ -152,7 +150,7 @@ $(function()
  	<div class="pays-list">
  		<label for="pays">Pays </label>
 	 	<select name="pays"> 
-			<option value='Choose'>Choose a country </option>
+
 			<option value="AF">Afghanistan</option>
 			<option value="AX">Åland Islands</option>
 			<option value="AL">Albania</option>
