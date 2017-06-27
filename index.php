@@ -451,7 +451,7 @@ $(function()
 
 
 <footer>
-	<input class="button" name="envoi" type="submit">
+	<input class="button" name="envoi" type="submit" value="Envoyer message">
 	<?php
 	if(isset($message))
 	{

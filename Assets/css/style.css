@@ -13,181 +13,107 @@
 
 
 body {
-  font-family: 'bellotaregular';
-  width:90%;
+  font-family: 'BellotaRegular'; /* Shame shame! */ 
+  width:100%;
   margin:auto;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
 }
 
-form {
-  background-color: #FFFFFF;
-  display: inline-block;
-  background-image: url("hackers-poulette-logo.png");
-  position: relative;
-  width: 100%;
+.invisible-square {
+  background-color: #ffffff;
+  position: absolute;
+  margin: 3.8% 18.5%;
+  top: 49px;
+  width: 64%;
+  height: 575px;
+  box-shadow: 1px 1px 1px #888888;
+}
 
+/*logo*/
+.header-customization {
+  background: url(../img/hackers-poulette-logo.png) no-repeat 100% 55%;  
+  background-size: 200px 150px;
+}
 
+.titre-formulaire {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+.titre-formulaire, .paragraphe-header {
+  text-align: center;
+}
+
+.paragraphe-header {
+  font-size: 18px;
+  margin-bottom: 25px;
 
 }
 
-header {
-  background-color: #15C5BD;
-  margin-top:0 auto;
-}
-
-h1 {
-  padding-top: -2px;
-  padding-left: 40px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-h2 {
-  padding-bottom: 50px;
-  padding-left: 40px;
-  color:#FFF;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family:;
-}
-
-
-fieldset{
-  display:inline-block;
-
-
-}
-
-
-.info {
+.info-user {
+  margin-left: 10%;
+  margin-right: 12.5%;
   width:30%;
-  display: inline;
-  border: 0px solid black;
-  vertical-align: top;
-  margin-left: 50px;
-  padding-right: 10%;
-
+  float:left;
 }
 
-
-.message {
-  margin-top: 0px;
-  display:inline;
-  border: 0px solid black;
-  vertical-align: top;
-  width: 50%;
+.msg-user {
+  display:inline-block;
+  width:40%;
 }
 
-.nom {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  
+.msg-content {
+  resize: none; /*Shame shame */
 }
 
-.nom input {
-  margin-left: 10px;
+.button-position {
+  text-align: center;
+  margin-top:110px;
+}
+
+.button.is-primary {
+  background-color: #15c5bd;
+  border-radius: 5px;
+  color:white;
+}
+
+.input.is-primary {
+  border-color: #15c5bd;
+}
+
+/* css réponse dans une page */
+
+.content-send {
+  text-align: center;
+  border:2px solid #15c5bd;
   width:50%;
+  margin-left:25%;
+  margin-right: 25%;
+  margin-top:25px;
 }
 
-
-
-
-
-#genre {
-  width:10%;
-}
-
-.email {
-  padding-top: 100px;
-  padding-bottom: 10px;
-  margin-bottom: 37px;
-
-}
-
-.pays-list select {
-  width:80%;
+a {
+  text-decoration: none;
 }
 
 button {
-  display:block;
+  font-family: 'BellotaRegular'; /* Shame shame! */ 
+}
+
+.button-position {
+  width:50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25px;
+}
+
+.button-position-retour {
   float:right;
-  margin-right: 7%;
-  width: 100px;
-  height: 80px;
-  
 }
 
-input {
-  float:flex;
-}
-
-
-footer {
-
-   background-color: #15C5BD;
-   width: 100%;
-   height: 60px;
-}
-
-
-.message {
-  display: inline;
-}
-
-.sujet {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.message-box {
-  display: inline;
-
-  
-}
-input {
-  border:0px ;
-  border-bottom: 2px solid #A5C5BD;
-
-}
-.button {
-  background:white;
-  border-radius: 1px;
-  border:0px;
-  margin-top: 2%;
-  height: 30px;
-  
-}
-
-#hacker-p {
-  display:inline;
-  
-}
-
-#hacker-p img {
-  width: 300px;
-  height:250px;
-  left: 75%;
-  top: 20%;
-  position: absolute;
-}
-
-#text-message {
-  width: 92%;
-  border: solid dashed 1px;
-  font-size: 16px;
-  margin-top: 20px;
-  resize: none;
-
-}
-
-.php {
-  margin-left: 40px;
-}
-
-
-#formulaire label.error {
-  color:#FB3A3A;
-  font-weight:bold;
-  font-style: italic;
+.button-position-formulaire {
+  float:left;
 }
